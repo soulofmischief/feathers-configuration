@@ -1,7 +1,7 @@
 {
   "name": "@soulofmischief/feathers-configuration",
   "description": "A wrapper for node-config to integrate configuration data into a feathers app.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "soulofmischief",
   "homepage": "https://github.com/soulofmischief/feathers-configuration#readme",

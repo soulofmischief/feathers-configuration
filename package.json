@@ -20,12 +20,13 @@
   "engines": {
     "node": ">= 10"
   },
-  "main": "lib",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "babel src -d lib",
-    "publish:patch": "yarn test && yarn build && npm version patch && cp -f package.json lib && cd lib && yarn npm publish --access public",
-    "publish:minor": "yarn test && yarn build && npm version minor && cp -f package.json lib && yarn npm publish -f lib",
-    "publish:major": "yarn test && yarn build && npm version major && cp -f package.json lib && yarn npm publish -f lib",
+    "publish": "yarn test && yarn build && yarn npm publish --access public",
     "test": "babel-node $(yarn bin ospec)"
   },
   "dependencies": {

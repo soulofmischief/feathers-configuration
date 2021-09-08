@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "build": "babel src -d lib",
-    "publish": "yarn test && yarn build && yarn npm publish --access public",
+    "publish": "yarn test && yarn build && yarn version && yarn npm publish --access public",
     "test": "babel-node $(yarn bin ospec)"
   },
   "dependencies": {

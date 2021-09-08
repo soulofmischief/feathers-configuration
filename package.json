@@ -23,9 +23,9 @@
   "main": "lib",
   "scripts": {
     "build": "babel src -d lib",
-    "publish:patch": "npm test && npm run build && npm version patch && cp -f package.json lib && npm publish --access public lib",
-    "publish:minor": "npm test && npm run build && npm version minor && cp -f package.json lib && npm publish --access public lib",
-    "publish:major": "npm test && npm run build && npm version major && cp -f package.json lib && npm publish --access public lib",
+    "publish:patch": "yarn test && yarn build && npm version patch && cp -f package.json lib && yarn publish -f lib",
+    "publish:minor": "yarn test && yarn build && npm version minor && cp -f package.json lib && yarn publish -f lib",
+    "publish:major": "yarn test && yarn build && npm version major && cp -f package.json lib && yarn publish -f lib",
     "test": "babel-node $(yarn bin ospec)"
   },
   "dependencies": {
